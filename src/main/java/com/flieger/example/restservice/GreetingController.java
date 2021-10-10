@@ -22,4 +22,8 @@ public class GreetingController {
         return this.greetingService.getGreeting(name);
     }
     
+    @GetMapping("/foo")
+    public Foo getFoo() {
+        return new Foo();
+    }
 }
